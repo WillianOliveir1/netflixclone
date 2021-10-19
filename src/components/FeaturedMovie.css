@@ -29,7 +29,9 @@
 	margin-top: 15px;
 }
 
-.featured--points, .featured--year, .featured--seasons {
+.featured--points,
+.featured--year,
+.featured--seasons {
 	display: inline-block;
 	margin-right: 15px;
 }
@@ -39,14 +41,14 @@
 }
 
 .featured--description {
-	margin-right: 15px;
+	margin-top: 15px;
 	font-size: 20px;
 	color: #999;
 	max-width: 40%;
 }
 
 .featured--buttons {
-	margin-right: 15px;
+	margin-top: 15px;
 }
 
 .featured--watchbutton,
@@ -81,4 +83,28 @@
 	margin-top: 15px;
 	font-size: 18px;
 	color: #999;
+}
+
+@media (max-width: 760px) {
+	.featured {
+		height: 90vh;
+	}
+	.featured--name {
+		font-size: 40px;
+	}
+	.featured--info {
+		font-size: 16px;
+	}
+	.featured--description {
+		font-size: 14px;
+		max-width: 100%;
+		margin-right: 30px;
+	}
+	.featured--watchbutton,
+	.featured--mylistbutton {
+		font-size: 16px;
+	}
+	.featured--genres {
+		font-size: 14px;
+	}
 }

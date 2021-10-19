@@ -7,7 +7,7 @@ const basicFetch = async(endpoint) => {
 }
 
 export default {
-    getHomeList: async () => {
+	async getHomeList () {
         return [{
                 slug: 'originals',
                 title: 'Originais da Netflix',
