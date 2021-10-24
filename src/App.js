@@ -4,6 +4,7 @@ import Tmdb from "./Tmdb.js";
 import MovieRow from "./components/MovieRow.js";
 import FeaturedMovie from "./components/FeaturedMovie.js";
 import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 
 export default () => {
 	
@@ -47,11 +48,8 @@ export default () => {
 					<MovieRow key={key} title={item.title} items={item.items}/>
 				))}
 			</section>
-			<footer>
-				Feito por Willian Oliveira.<br/>
-				Dados extraidos de The Movie DataBase - themoviedb.org<br/>
-				Direitos de imagem para Netflix<br/>
-			</footer>
+			<Footer/>
+			
 			{ movieList.length <= 0 &&
 				<div className="loading">
 					<img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="Carregando..."/>
